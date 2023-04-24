@@ -29,14 +29,26 @@
 <li>Lesson 10: </li>
 <li>Lesson 11: </li>
 </ul>
-<em><
+<em>
 <p>Some lessons may need more that one activity/assignment link</p></em>
 </main>
 
 <footer>
-    <p>&copy 2021 .:|:. Marisabel Trejo .:|:. California</p>
-    <p class="time">Last Updated</p>
+    <p>&copy 2021 .:|:. Marisabel Trejo .:|:. California</p> 
+    <p class="time"><br> Last Updated </p>
 
 </footer>
 </body>
 </html>
+
+<script>
+    let daynames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+    let months = ["January", "Febuary", "March", "April", "May", "June", "July",
+    "August", "September", "November", "December"]
+   
+   
+    var date = document.lastModified;
+    var lastModifiedDate = new Date(date);
+    document.getElementsByClassName(".time").innerHTML = "The document was last modified on : " + lastModifiedDate;
+    
+</script>

@@ -10,6 +10,8 @@ header img {
   margin-left: 450px;
   margin-right: auto;
   padding-top: 10px;
+  border-radius: 25px;
+  box-shadow: 4px 4px 4px #000000;
   
 }
 
@@ -19,6 +21,7 @@ header {
     background-color:#f08080;
     height: 300px;
     border-radius: 25px;
+    box-shadow: 2px 2px 4px #000000;
 }
 
 
@@ -48,9 +51,23 @@ main p {
 }
 
 footer {
-    display:flex;
     background-color:#f08080;
     height: 100px;
     border-radius: 25px;
+    
+    box-shadow: 4px 4px 4px #000000;
+}
+body { min-height: 100vh; }
+
+footer p {
+    padding-top: 20px;
+    display:flex;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:bold;
     justify-content:center;
+}
+
+.time {
+    color:#e1eb59;
+    margin-top: -50px;
 }
