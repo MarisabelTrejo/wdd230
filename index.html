@@ -35,8 +35,8 @@
 </main>
 
 <footer>
-   <p>&copy .:|:. Marisabel Trejo .:|:. California</p> 
-    <p class="time"><br> Last Updated </p>
+   <p>&copy 2023 .:|:. Marisabel Trejo .:|:. California</p> 
+    <p id="time"><br> Last Updated </p>
 
 </footer>
 </body>
@@ -45,5 +45,19 @@
 <script>
    
    document.querySelector('#time').innerHTML = `The document was last modified on ${document.lastModified}`;
+   let daynames = ["Sunday", "Monday", "Tuestday", "Wednesday", "Thursday", "Friday", "Satruday"]
+   let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October",
+   "November", "December"]
+
+   let date = new Date();
+   let dayName = daynames[date.getDay()];
+   let monthName = months[date.getMonth()];
+   let year = date.getFullYear();
+   let fulldate = dayName + " , " + monthName + " " + date.getDate() +  ", " + year;
+
+   document.getElementbyID("time").textContent = fulldate;
+
+
+
     
 </script>
