@@ -12,6 +12,7 @@ h1 {
     font-style: bold;
     padding: 15px;
     margin: 0px;
+    align-items: center;
 }
 
 h2 {
@@ -107,4 +108,8 @@ footer {
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 50px;
+}
+
+.updated {
+    color: yellow;
 }
