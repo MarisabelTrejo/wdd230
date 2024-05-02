@@ -1,3 +1,19 @@
+main,
+body,
+header {
+    margin: 1 rem auto;
+    max-width: 640px;
+    border: 1px solid black;
+    padding: 1rem;
+    background-color: #e6f2ff;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+
 body {
 
     font-family: "Roboto", sans-serif;
@@ -6,23 +22,7 @@ body {
 
 }
 
-@media screen and (max-width: 640px) {
-    header {
-        margin: 1 rem auto;
-        background-color: aquamarine;
-
-    }
-
-    footer {
-        margin: 1 rem auto;
-        background-color: aquamarine;
-    }
-
-    main {
-        margin: 1 rem auto;
-        background-color: aquamarine;
-        display: grid;
-        grid-template-columns: 1rem;
-    }
-
+section {
+    padding: 1rem;
+    background-color: #fff;
 }
