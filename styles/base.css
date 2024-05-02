@@ -17,10 +17,18 @@ h2 {
     border-bottom: 2px solid black;
 }
 
+nav ul {
+    list-style-type: none;
+}
+
+
 nav a {
     font-family: "Syne", sans-serif;
     text-decoration: none;
     color: black;
+    display: block;
+    text-align: center;
+    padding: 1rem;
 
 }
 
@@ -28,15 +36,14 @@ nav li {
     margin: 15px;
 }
 
-nav ul {
-    text-align: center;
-    list-style-type: none;
-    padding: 15px 0px;
-}
-
 nav {
     background-color: rgb(147, 129, 255);
     padding: 1px;
+    max-width: 100%;
+}
+
+nav a:hover {
+    border: 1px solid black;
 }
 
 ol {
