@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #DAA9AC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+
+}
+
+section {
+    margin: 10px;
+}
+
+
+
+div a {
+    margin-left: 10px
+}
+
+
+.grid {
+    display: grid;
+    grid-gap: 10px 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+
+p {
+    font-family: "Raleway", sans-serif;
+
+}
+
+h1 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    padding: 15px;
+    margin: 0px;
+    align-items: center;
+}
+
+h2 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+}
+
+
+
+h3 {
+    margin: 0px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    background-color: #d7b29d;
+    border: 1px solid black;
+    padding: 15px 10px;
+}
+
+.card {
+    border: 1px solid black;
+
+}
+
+img {
+    display: block;
+    width: 75vw;
+    height: 40vh;
+    margin: 10px auto;
+}
+
+.company {
+    padding-left: 10px;
+}
+
+footer {
+    background-color: #DAA9AC;
+    margin: 0px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
