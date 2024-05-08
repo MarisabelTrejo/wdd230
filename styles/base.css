@@ -127,7 +127,8 @@ body {
 }
 
 section {
-    margin: px;
+    margin: 20px;
+    border-radius: 0.6em;
 }
 
 .card h3 {
@@ -169,4 +170,16 @@ footer {
 
 .updated {
     color: yellow;
+}
+
+.border {
+    border: 2px solid #0A014F;
+    margin: 1.8rem;
+    border-radius: 0.6em;
+}
+
+.map {
+    width: 100%;
+    display: block;
+    margin: 0px auto;
 }
