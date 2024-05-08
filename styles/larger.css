@@ -32,4 +32,18 @@
         grid-column: 2/3;
         grid-row: 2/4;
     }
+
+    #menu {
+        display: none;
+        /* hide hamburger button */
+    }
+
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    iframe {
+        display: flex;
+    }
 }
