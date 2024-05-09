@@ -1,0 +1,69 @@
+body {
+    background-color: #EFE7DA;
+}
+
+body,
+html {
+    margin: 0px;
+}
+
+h1 {
+    font-family: "DM Sans", sans-serif;
+    padding: 15px;
+    align-items: center;
+    color: white;
+
+}
+
+h2,
+p {
+    font-family: "Figtree", sans-serif;
+
+}
+
+section {
+    margin: 20px;
+    border-radius: 0.6em;
+}
+
+h2 {
+    border-bottom: 2px solid #9A8873;
+    background-color: #3A2618;
+    color: white;
+    margin: 0;
+
+}
+
+main {
+
+    text-align: center;
+}
+
+header {
+    background-color: #3A2618;
+
+}
+
+header p {
+    color: white;
+}
+
+.card {
+    border: 2px solid #3A2618;
+
+}
+
+img {
+    padding-top: 10px;
+    height: 200px;
+    width: 160px;
+}
+
+.card img {
+    height: 300px;
+    width: 300px;
+}
+
+footer {
+    background-color: #3A2618
+}
