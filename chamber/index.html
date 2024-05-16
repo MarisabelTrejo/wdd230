@@ -4,16 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GCK Chamber of Commerce</title>
     <meta name="author" content="Marisabel Trejo" />
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Garden City Chamber of Commerce">
+    <meta property="og:type" content="website" />
+    <meta property="og:image"
+        content="https://static.wikia.nocookie.net/kssports/images/9/99/Garden_City.png/revision/latest?cb=20210415215146">
+    <meta property="og:url" content="https://marisabeltrejo.github.io/wdd230/">
+
     <meta name="description" content="The main page for my WDD 230 - Web Frontend Development Chambers project" />
-    <link rel="stylesheet" href="chamber/styles/base.css">
-    <link rel="stylesheet" href="chamber/styles/medium.css">
-    <link rel="stylesheet" href="chamber/styles/larger.css">
-
-
-    <a href="https://www.flaticon.com/free-icons/buffalo" title="buffalo icons">Buffalo icons created by Freepik -
-        Flaticon</a>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,15 +29,59 @@
 
 <body>
     <header>
-
+        <h1>Garden City, Kansas</h1>
+        <h2>Chamber of Commerce</h2>
     </header>
-    <main>
+    <button id="menu"></button>
 
+    <nav class="navigation">
+        <ul>
+            <li><a class="hightlight">Home</a></li>
+            <li><a class="hightlight">Discover</a></li>
+            <li><a class="hightlight">Directory</a></li>
+            <li><a class="hightlight">Join</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <p>Current Events</p>
+        </section>
+
+        <section>
+            <img src="images/community-college.png" alt="a group picture of people at the community-college">
+        </section>
+
+        <section>
+            <p>Short Statement</p>
+        </section>
+
+        <section>
+            <a href="destination.html" target="_blank">
+                <button>Join Us</button>
+            </a>
+            <p>Join Us</p>
+        </section>
+
+        <section>
+            <p>
+                Weather
+            </p>
+        </section>
+        <section>
+            <p>Company Spotlight</p>
+        </section>
     </main>
     <footer>
-        <a href="https://www.flaticon.com/free-icons/buffalo" title="buffalo icons">Buffalo icons created by Freepik -
-            Flaticon</a>
+        <div class="flag">
+            <p id="year">©</p>
+            <p> Marisabel Trejo </p>
+        </div>
+
+        <p>Last Modification: </p>
+        <p id="modified" class="updated"></p>
+
     </footer>
+    <script src="chamber/scripts/chamber.js"></script>
 </body>
 
 </html>
