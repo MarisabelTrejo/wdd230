@@ -10,5 +10,12 @@ lastUpdated.textContent = LastModif;
 
 Year.textContent += presentYear;
 
-const navigation = document.querySelector('.navigation');
+const navigation = document.getElementById("nav");
+const hamButton = document.getElementById('menu');
+
+hamButton.addEventListener('click', () => {
+    console.log("working")
+    navigation.classList.toggle('open');
+    hamButton.classList.toggle('open');
+});
 

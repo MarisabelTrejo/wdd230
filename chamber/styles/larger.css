@@ -1,0 +1,32 @@
+@media (min-width: 800px) {
+
+    .main-img {
+        height: 50vh;
+        width: 100%;
+    }
+
+    .grid2 {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .grid2-img {
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+
+    .grid3 {
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+
+    .grid4 {}
+
+    .grid5 {}
+
+    .grid6 {}
+
+
+
+
+}
