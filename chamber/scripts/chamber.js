@@ -1,6 +1,9 @@
 const lastUpdated = document.getElementById("modified");
 const Year = document.getElementById("year");
-
+const modeButton = document.getElementById("mode");
+const body = document.getElementById("body");
+const header = document.getElementById("header");
+const nav = document.getElementById("nav");
 const d = new Date();
 let presentYear = d.getFullYear();
 
@@ -19,3 +22,12 @@ hamButton.addEventListener('click', () => {
     hamButton.classList.toggle('open');
 });
 
+modeButton.addEventListener('click', function () {
+
+
+    body.classList.toggle('dark');
+    header.classList.toggle('dark');
+    nav.classList.toggle('dark')
+
+
+})

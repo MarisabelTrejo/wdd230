@@ -27,12 +27,16 @@
     <link rel="icon" href="images/buffalo.ico">
 </head>
 
-<body>
-    <header>
+<body id="body">
+    <header id="header">
         <h1>Garden City, Kansas</h1>
         <h2>Chamber of Commerce</h2>
     </header>
-
+    <!-- Rounded switch -->
+    <label class="switch">
+        <input type="checkbox" id="mode">
+        <span class="slider round"></span>
+    </label>
     <button id="menu"></button>
     <nav id="nav" class="navigation">
         <ul>
@@ -42,6 +46,7 @@
             <li><a>Join</a></li>
         </ul>
     </nav>
+
     <main class="grid grid2">
         <section class="grid1">
             <h2> Current Events </h2>
