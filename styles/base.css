@@ -168,9 +168,11 @@ footer {
     border-radius: 50px;
 }
 
-.updated {
+.updated,
+footer p {
     color: yellow;
 }
+
 
 .border {
     border: 2px solid #0A014F;
