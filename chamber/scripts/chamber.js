@@ -6,6 +6,7 @@ const header = document.getElementById("header");
 const nav = document.getElementById("nav");
 const d = new Date();
 let presentYear = d.getFullYear();
+const section = document.getElementsByTagName("section");
 
 let LastModif = new Date(document.lastModified);
 
@@ -28,6 +29,7 @@ modeButton.addEventListener('click', function () {
     body.classList.toggle('dark');
     header.classList.toggle('dark');
     nav.classList.toggle('dark')
+    section.classList.toggle('dark')
 
 
 })
