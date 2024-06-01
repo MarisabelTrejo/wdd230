@@ -25,7 +25,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="icon" href="images/favicon.ico">
+    <link rel="icon" href="images/favicon.webp">
 
 </head>
 
@@ -47,12 +47,12 @@
     </nav>
     <div class="hero">
         <picture>
-            <source srcset="images/temple-small.webp" media="(max-width: 500px )">
-            <source srcset="images/temple-medium.webp" media="(max-width: 1000px)">
-            <img src="images/temple-large.webp" alt="Tonga LDS temple" width="2" height="1">
+            <source srcset="images/new-hero-small.webp" media="(max-width: 500px )">
+            <source srcset="images/new-hero-medium.webp" media="(max-width: 1000px)">
+            <img src="images/new-hero-large.webp" alt="meeting with people" width="1500" height="1000">
         </picture>
         <div class="herolabel">
-            <p>Tonga Temple</p>
+            <p>Meeting</p>
         </div>
     </div>
     <main>
@@ -78,10 +78,15 @@
             </ol>
         </section>
         <section class="card grid3">
-            <h3>Information</h3>
-            <p>City </p>
-            <p>Temperature</p>
-            <p>Visits</p>
+            <h3>Information Weather</h3>
+            <div class="weather">
+                <p>City</p>
+                <p id="temp">Temperature</p>
+                <p id="wind-speed"> Wind Speed</p>
+                <p id="forcast">Forecast</p>
+                <img src="" id="icon"></img>
+                <p>Visits</p>
+            </div>
         </section>
     </main>
     <p class="border">
@@ -101,6 +106,7 @@
         <p id="modified" class="updated"></p>
     </footer>
     <script src="scripts/getdates.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 
 </html>
