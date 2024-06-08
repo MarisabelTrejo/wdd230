@@ -185,3 +185,17 @@ input:checked+.slider:before {
     color: white;
 
 }
+
+.img-details {
+    background-size: cover;
+    width: 95vw;
+    height: 60vh;
+    display: block;
+    margin: 15px auto;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.visit {
+    text-align: center;
+}
