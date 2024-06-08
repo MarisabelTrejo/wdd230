@@ -8,6 +8,10 @@ h1 {
     color: white;
 }
 
+#sidebar-content {
+    font-family: "Figtree"
+}
+
 h2 {
     font-family: "Figtree";
     color: white;
