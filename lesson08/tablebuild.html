@@ -12,34 +12,35 @@
 <body>
     <div class="container">
         <table>
-            <caption>Table:1: Account Feaurure Comparison </caption>
-            <thread>
+            <caption>Table 1: Account Feature Comparison</caption>
+            <thead>
                 <tr>
-                    <th scope="col"> ACME Wildwest Services</th>
-
-
-                    <th scope="col"></th>
-                    <th scope="col"></th>
-                    <th scope="col"></th>
+                    <th scope="col" class="ACME">ACME Wildwest Services</th>
+                    <th scope="col">Basic</th>
+                    <th scope="col">Premium</th>
+                    <th scope="col">Deluxe</th>
                 </tr>
-            </thread>
+            </thead>
             <tbody>
                 <tr class="grey">
-                    <th scope="col"> </th>
-
-                    <td>Basic</td>
-                    <td>Premium</td>
-                    <td>Deluxe</td>
-
+                    <th scope="row" class="feature">Feature 1</th>
+                    <td>✔️ </td> <!-- Replace ✓ with appropriate indicators or information -->
+                    <td>✔️ </td>
+                    <td>✔️ </td>
                 </tr>
                 <tr>
-                    <th scope="row"></th>
-                    <td>Feature 1</td>
-                    <td scope="row">Feauture 2</td>
-                    <td scope="row">Feature 3</td>
+                    <th scope="row" class="feature">Feature 2</th>
+                    <td>❌ </td>
+                    <td>✔️ </td>
+                    <td>✔️ </td>
+                </tr>
+                <tr class="grey">
+                    <th scope="row" class="feature">Feature 3</th>
+                    <td>❌ </td>
+                    <td>❌ </td>
+                    <td>✔️ </td>
                 </tr>
             </tbody>
-
         </table>
     </div>
 </body>
