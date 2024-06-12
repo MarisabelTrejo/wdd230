@@ -1,0 +1,41 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+caption {
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+/* Styling table header */
+th {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+/* Styling table body */
+td {
+    padding: 10px;
+}
+
+/* Zebra striping */
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
