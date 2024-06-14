@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GCK Chamber of Commerce</title>
+    <meta name="author" content="Marisabel Trejo" />
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Garden City Chamber of Commerce">
+
+
+    <meta property="og:type" content="website" />
+    <meta property="og:image"
+        content="https://static.wikia.nocookie.net/kssports/images/9/99/Garden_City.png/revision/latest?cb=20210415215146">
+    <meta property="og:url" content="https://marisabeltrejo.github.io/wdd230/">
+
+    <meta name="description" content="The main page for my WDD 230 - Web Frontend Development Chambers project" />
+    <link rel="stylesheet" href="styles/form.css">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images/buffalo.ico">
+</head>
+
+<body>
+    <header id="header">
+        <h1>Garden City Chamber of Commerce</h1>
+
+    </header>
+    <!-- Rounded switch -->
+    <label class="switch">
+        <input type="checkbox" id="mode">
+        <span class="slider round"></span>
+    </label>
+    <button id="menu"></button>
+    <nav id="nav" class="navigation">
+        <ul>
+            <li><a>Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a>Directory</a></li>
+            <li><a>Join</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form method="get" action="record.html" class="wf1">
+            <fieldset>
+                <legend>Username</legend>
+                <label for="id">Id</label>
+                <input type="text" id="id" name="idname" required>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="fname" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Password</legend>
+                <label for="pwd">Password</label>
+                <input type="password" id="pwd" name="pwd" pattern="^(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z\d]{8,}$"
+                    title="Password must be at least 8 characters long and alphanumeric" required>
+            </fieldset>
+            <fieldset>
+                <legend>Confirm Password</legend>
+                <label for="confirmPwd">Confirm Password</label>
+                <input type="password" id="confirmPwd" name="confirmPwd" required oninput="checkPasswordMatch()">
+                <span id="passwordMatchError" style="color: red; display: none;">Passwords do not match!</span>
+            </fieldset>
+            <fieldset>
+                <legend>Email</legend>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your byui email address"
+                    title="A valid byui.edu email address." pattern="[a-zA-Z0-9_.\-]+@byui.edu" required>
+                <input type="submit" value="Validate">
+            </fieldset>
+
+            <fieldset>
+                <legend>Page Rating</legend>
+                <label for="pageRating">Page Rating:</label>
+                <input type="range" id="pageRating" name="pageRating" min="1" max="10" step="1"
+                    oninput="updatePageRatingValue()">
+                <span id="pageRatingValue">Page Rating: 5</span>
+            </fieldset>
+
+            <input type="submit" value="Log in">
+
+        </form>
+
+    </main>
+
+    <footer>
+        <div class="flag">
+            <p id="year">©</p>
+            <p> Marisabel Trejo| Contact Info: 620- 276- 4023 | Project for WDD230</p>
+        </div>
+
+        <p>Last Modification: </p>
+        <p id="modified" class="updated"></p>
+
+    </footer>
+    <script src="scripts/chamber.js"></script>
+    <script src="scripts/form.js"></script>
+</body>
+
+</html>
