@@ -16,6 +16,8 @@
     <meta property="og:url" content="https://marisabeltrejo.github.io/wdd230/">
 
     <meta name="description" content="The main page for my WDD 230 - Web Frontend Development Chambers project" />
+    <link rel="stylesheet" href="styles/form.css">
+
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
@@ -29,7 +31,7 @@
     <link rel="icon" href="images/buffalo.ico">
 </head>
 
-<body id="body">
+<body>
     <header id="header">
         <h1>Garden City Chamber of Commerce</h1>
 
@@ -45,40 +47,53 @@
             <li><a>Home</a></li>
             <li><a href="discover.html">Discover</a></li>
             <li><a>Directory</a></li>
-            <li><a href="form.html">Join</a></li>
+            <li><a>Join</a></li>
         </ul>
     </nav>
+    <main>
+        <form method="get" action="record.html" class="wf1">
+            <fieldset>
+                <legend>Username</legend>
+                <label for="id">Id</label>
+                <input type="text" id="id" name="idname" required>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="fname" required>
+            </fieldset>
 
-    <main class="grid grid2">
-        <section class="grid1">
-            <h2> Current Events </h2>
-        </section>
+            <fieldset>
+                <legend>Password</legend>
+                <label for="pwd">Password</label>
+                <input type="password" id="pwd" name="pwd" pattern="^(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z\d]{8,}$"
+                    title="Password must be at least 8 characters long and alphanumeric" required>
+            </fieldset>
+            <fieldset>
+                <legend>Confirm Password</legend>
+                <label for="confirmPwd">Confirm Password</label>
+                <input type="password" id="confirmPwd" name="confirmPwd" required oninput="checkPasswordMatch()">
+                <span id="passwordMatchError" style="color: red; display: none;">Passwords do not match!</span>
+            </fieldset>
+            <fieldset>
+                <legend>Email</legend>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your byui email address"
+                    title="A valid byui.edu email address." pattern="[a-zA-Z0-9_.\-]+@byui.edu" required>
+                <input type="submit" value="Validate">
+            </fieldset>
 
-        <section class="grid3">
-            <h2>Short Statement</h2>
-            <picture>
-                <source srcset="images/community-colloge-small.webp" media="(max-width: 500px)">
-                <source srcset="images/community-college-medium.webp" media="(max-width: 1000px)">
-                <img class="main-img grid2-img" src="images/community-college-large.webp"
-                    alt="a group picture of people at the community-college">
-            </picture>
-        </section>
+            <fieldset>
+                <legend>Page Rating</legend>
+                <label for="pageRating">Page Rating:</label>
+                <input type="range" id="pageRating" name="pageRating" min="1" max="10" step="1"
+                    oninput="updatePageRatingValue()">
+                <span id="pageRatingValue">Page Rating: 5</span>
+            </fieldset>
 
-        <section class="grid4">
-            <a href="https://fonts.gstatic.com" target="_blank"> Join Us </a>
+            <input type="submit" value="Log in">
 
-            <h2>Join Us</h2>
-        </section>
+        </form>
 
-        <section class="grid5">
-            <h2>
-                Weather
-            </h2>
-        </section>
-        <section class="grid6">
-            <h2>Company Spotlight</h2>
-        </section>
     </main>
+
     <footer>
         <div class="flag">
             <p id="year">©</p>
@@ -90,6 +105,7 @@
 
     </footer>
     <script src="scripts/chamber.js"></script>
+    <script src="scripts/form.js"></script>
 </body>
 
 </html>
