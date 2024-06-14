@@ -4,11 +4,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GCK Chamber of Commerce</title>
+    <meta name="author" content="Marisabel Trejo" />
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Garden City Chamber of Commerce">
+
+
+    <meta property="og:type" content="website" />
+    <meta property="og:image"
+        content="https://static.wikia.nocookie.net/kssports/images/9/99/Garden_City.png/revision/latest?cb=20210415215146">
+    <meta property="og:url" content="https://marisabeltrejo.github.io/wdd230/">
+
+    <meta name="description" content="The main page for my WDD 230 - Web Frontend Development Chambers project" />
+    <link rel="stylesheet" href="styles/form.css">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images/buffalo.ico">
 </head>
 
-<body>
+<body id="body">
+    <header id="header">
+        <h1>Garden City Chamber of Commerce</h1>
 
+    </header>
+    <!-- Rounded switch -->
+    <label class="switch">
+        <input type="checkbox" id="mode">
+        <span class="slider round"></span>
+    </label>
+    <button id="menu"></button>
+    <nav id="nav" class="navigation">
+        <ul>
+            <li><a>Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a>Directory</a></li>
+            <li><a href="form.html">Join</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form method="get" action="thankyou.html" class="wf1">
+            <fieldset>
+                <legend>Name</legend>
+                <label for="name"> First Name* <input type="text" id="name" name="fname" required> </label>
+                <label for="lastname"> Last Name* <input type="text" name="lname" id="lastname" required> </label>
+                <label for="title">Title/Position
+                    <input type="text" id="title" name="tname" required pattern="[A-Za-z -]{7,}">
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="email"> Email* <input type="email" name="email" id="email" placeholder="someone@gmail.com"
+                        required>
+                </label>
+                <label for="pnumber"> Phone <input type="tel" name="phone" placeholder="1234551234" id="pnumber"
+                        required> </label>
+
+                <label for="businessname">Business Name or Organization<input type="text" id="businessname"
+                        name="bname"></label>
+                <label for="description">Business/Organization Description:</label><br>
+                <textarea id="description" name="description" rows="4" cols="50"></textarea>
+                <input type="hidden" id="formLoadedTime" name="formLoadedTime">
+
+            </fieldset>
+            <fieldset>
+                <legend>Membership</legend>
+                <label for="membership">Membership Level:</label>
+                <select id="membership" name="membership">
+                    <option value="np">NP Membership (No Fee)</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+                </select>
+                <div class="benefits-container">
+                    <div class="membership-level">
+                        <h2>NP Membership (No Fee)</h2>
+                        <ul>
+                            <li>Access to member-only events</li>
+                            <li>Monthly newsletter</li>
+                            <li>Networking opportunities</li>
+                        </ul>
+                    </div>
+
+                    <div class="membership-level">
+                        <h2>Bronze Membership</h2>
+                        <ul>
+                            <li>All NP Membership benefits</li>
+                            <li>Discounts on training programs</li>
+                            <li>Featured listing on website</li>
+                        </ul>
+                    </div>
+
+                    <div class="membership-level">
+                        <h2>Silver Membership</h2>
+                        <ul>
+                            <li>All Bronze Membership benefits</li>
+                            <li>Priority access to events</li>
+                            <li>Advertisement opportunities</li>
+                        </ul>
+                    </div>
+
+                    <div class="membership-level">
+                        <h2>Gold Membership</h2>
+                        <ul>
+                            <li>All Silver Membership benefits</li>
+                            <li>Exclusive invites to VIP events</li>
+                            <li>Customized marketing packages</li>
+                        </ul>
+                    </div>
+            </fieldset>
+            <input type="submit" value="Sign Up">
+        </form>
+    </main>
+
+    <footer>
+        <div class="flag">
+            <p id="year">©</p>
+            <p> Marisabel Trejo| Contact Info: 620- 276- 4023 | Project for WDD230</p>
+        </div>
+
+        <p>Last Modification: </p>
+        <p id="modified" class="updated"></p>
+
+    </footer>
+    <script src="scripts/chamber.js"></script>
+    <script src="scripts/form.js"></script>
 </body>
 
 </html>
