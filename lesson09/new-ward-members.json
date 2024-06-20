@@ -1,0 +1,25 @@
+{
+    "wardInformation": {
+        "familyName": "Davis",
+        "moveInDate": "2023-02-14",
+        "numberOfPeople": 3,
+        "visitedByBishopric": true,
+        "familyMembers": [
+            {
+                "name": "Austin Davis",
+                "gender": "Male",
+                "birthdate": "1998-03-11"
+            },
+            {
+                "name": "Marisabel Trejo ",
+                "gender": "Female",
+                "birthdate": "1998-26-08"
+            },
+            {
+                "name": "Leonel Davis",
+                "gender": "Male",
+                "birthdate": "2022-14-05"
+            }
+        ]
+    }
+}
