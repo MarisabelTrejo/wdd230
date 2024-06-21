@@ -49,7 +49,9 @@ function showList() {
 fetch(url)
     .then(res => res.json())
     .then(data => {
+        console.log(1)
         data.buisness.forEach((repo) => {
+            console.log(2)
             let section = `<section class="medium2 large2">
                 <h2 class="heading">${repo.name}</h2>
                 <div>
