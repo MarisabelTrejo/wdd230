@@ -1,64 +1,64 @@
 {
     "buisness": [
         {
-            "name": "Coding Kidos",
-            "adresses": "123 street, slc utah",
+            "name": "Dragon Express",
+            "adresses": "123 street, Garden City, Kansas",
             "phone": "801-993-8962",
             "website": "codingkidos.com",
-            "image": "codingkids.webp",
+            "image": "dragon.webp",
             "membership": "Silver Membership"
         },
         {
-            "name": "Vr Gym Studio",
-            "adresses": "123 street, slc utah",
+            "name": "Serenity Spa",
+            "adresses": "123 street, Garden City, Kansas",
             "phone": "801-993-8362",
             "website": "vrgymstudio.com",
-            "image": "vrworkout.webp",
+            "image": "serenity.webp",
             "membership": "Premium Member"
         },
         {
-            "name": "pizzaplanet",
-            "adresses": "1256 street, slc utah",
+            "name": "Sequoyah Movie Theater",
+            "adresses": "1256 street, Garden City, Kansas",
             "phone": "801-993-8322",
             "website": "pizzaplanet.com",
-            "image": "pizza_planet.webp",
+            "image": "sequoyah.webp",
             "membership": "Silver Member"
         },
         {
-            "name": "Homers Ice cream",
-            "adresses": "1233 street, slc utah",
+            "name": "Paleteria Ice Cream",
+            "adresses": "1233 street, Garden City, Kansas",
             "phone": "801-993-8162",
             "website": "homersice.com",
-            "image": "homersice.webp",
+            "image": "ice-cream.webp",
             "membership": "Premium Member"
         },
         {
-            "name": "Pie pizza",
-            "adresses": "1223 street, slc utah",
+            "name": "Ninja Stakehouse ",
+            "adresses": "1223 street, Garden City, Kansas",
             "phone": "801-993-9362",
             "website": "Thepiepizza.com",
-            "image": "thepiepizza.webp",
+            "image": "../images/ninja.webp",
             "membership": "Silver Member"
         },
         {
-            "name": "Megaplex theatres",
-            "adresses": "7123 street, slc utah",
+            "name": "CORE",
+            "adresses": "7123 street, Garden City, Kansas",
             "phone": "801-997-8362",
             "website": "Megaplex.com",
-            "image": "megaplex.webp",
+            "image": "core.webp",
             "membership": "Premium Member"
         },
         {
-            "name": "Vasa Gym",
-            "adresses": "45123 street, slc utah",
+            "name": "YMCA",
+            "adresses": "45123 street, Garden City, Kansas",
             "phone": "801-193-8362",
             "website": "vasa.com",
-            "image": "vasa.webp",
+            "image": "YMCA.webp",
             "membership": "Premium Member"
         },
         {
             "name": "Target",
-            "adresses": "15823 street, slc utah",
+            "adresses": "15823 street, Garden City, Kansas",
             "phone": "801-933-8362",
             "website": "Target.com",
             "image": "target.webp",
