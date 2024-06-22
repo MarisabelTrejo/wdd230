@@ -4,7 +4,7 @@
             "name": "Dragon Express",
             "adresses": "123 street, Garden City, Kansas",
             "phone": "801-993-8962",
-            "website": "codingkidos.com",
+            "website": "dragonexpress.com",
             "image": "dragon.webp",
             "membership": "Silver Membership"
         },
@@ -12,7 +12,7 @@
             "name": "Serenity Spa",
             "adresses": "123 street, Garden City, Kansas",
             "phone": "801-993-8362",
-            "website": "vrgymstudio.com",
+            "website": "serenity.com",
             "image": "serenity.webp",
             "membership": "Premium Member"
         },
@@ -20,7 +20,7 @@
             "name": "Sequoyah Movie Theater",
             "adresses": "1256 street, Garden City, Kansas",
             "phone": "801-993-8322",
-            "website": "pizzaplanet.com",
+            "website": "sequoyah8.com",
             "image": "sequoyah.webp",
             "membership": "Silver Member"
         },
@@ -28,7 +28,7 @@
             "name": "Paleteria Ice Cream",
             "adresses": "1233 street, Garden City, Kansas",
             "phone": "801-993-8162",
-            "website": "homersice.com",
+            "website": "paleteria.com",
             "image": "ice-cream.webp",
             "membership": "Premium Member"
         },
@@ -36,15 +36,15 @@
             "name": "Ninja Stakehouse ",
             "adresses": "1223 street, Garden City, Kansas",
             "phone": "801-993-9362",
-            "website": "Thepiepizza.com",
-            "image": "../images/ninja.webp",
+            "website": "ninja.com",
+            "image": "ninja.webp",
             "membership": "Silver Member"
         },
         {
             "name": "CORE",
             "adresses": "7123 street, Garden City, Kansas",
             "phone": "801-997-8362",
-            "website": "Megaplex.com",
+            "website": "core.com",
             "image": "core.webp",
             "membership": "Premium Member"
         },
