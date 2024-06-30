@@ -15,7 +15,9 @@ h1 {
 h2 {
     font-family: "Figtree";
     color: white;
-    padding-left: 20px;
+    background-color: #3A2618;
+    border: 2px solid #000;
+    padding: 20px;
 }
 
 .navigation {
@@ -315,4 +317,8 @@ section a {
 
 img {
     height: 75px;
+}
+
+.exits {
+    margin-right: 10px;
 }
