@@ -8,7 +8,7 @@ async function getProphetData(url) {
     displayProphets(data.prophets); // note that we reference the prophets array of the JSON data object, not just the object
 }
 
-getProphetData();
+getProphetData(url);
 
 const displayProphets = (prophets) => {
     prophets.forEach((prophet) => {
