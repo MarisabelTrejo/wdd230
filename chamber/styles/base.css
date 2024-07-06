@@ -3,6 +3,11 @@ html {
     margin: 0px;
 }
 
+main {
+    display: flex;
+    display: wrap;
+}
+
 h1 {
     font-family: "DM Sans";
     color: white;
@@ -112,7 +117,9 @@ footer {
 }
 
 p {
+    padding-top: 10px;
     font-family: "Figtree";
+    text-align: center;
 }
 
 /* The switch - the box around the slider */
@@ -248,7 +255,6 @@ section {
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 5px;
     align-items: center;
 }
 
@@ -321,4 +327,36 @@ img {
 
 .exits {
     margin-right: 10px;
+}
+
+.buttonJoin {
+    box-shadow: 0 0 10px #333;
+    background-color: #3A2618;
+    border: 2px solid #000;
+    padding: 10px 20px;
+
+}
+
+.buttonJoin a {
+    font-family: "Figtree";
+    color: white;
+}
+
+.grid1 ol {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+}
+
+.grid1 ol li {
+    text-align: left;
+    margin-left: 25px;
+    font-family: "Figtree";
+    padding: 10px;
+
+}
+
+section .grid1 {
+    grid-row: auto;
+    padding-bottom: 50px;
 }
