@@ -9,7 +9,7 @@ const display = document.getElementById("print");
 
 let presentYear = d.getFullYear();
 const section = document.getElementsByTagName("section");
-const companyUrl = "https://marisabeltrejo.github.io/wdd230/chamber/data/members-spotlight.json"
+const companyUrl = "https://marisabeltrejo.github.io/wdd230/chamber/data/member-spotlight.json"
 
 
 let LastModif = new Date(document.lastModified);
