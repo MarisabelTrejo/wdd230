@@ -6,7 +6,7 @@
             "phone": "801-193-8362",
             "website": "vasa.com",
             "image": "YMCA.webp",
-            "membership": "Premium Member"
+            "membership": "Gold Member"
         },
         {
             "name": "Target",
@@ -14,7 +14,7 @@
             "phone": "801-933-8362",
             "website": "Target.com",
             "image": "target.webp",
-            "membership": "Premium Member"
+            "membership": "Silver Member"
         },
         {
             "name": "CORE",
