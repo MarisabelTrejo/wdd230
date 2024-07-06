@@ -113,35 +113,33 @@
 
 
 
+    .image-container {
+        display: flex;
+        /* Nested flex container for images */
+        justify-content: space-between;
+        /* Space between each image */
+        align-items: center;
+        /* Align items vertically in the center */
+    }
+
+    img {
+        height: 200px;
+        width: 250px;
+    }
+
+    .image-container img {
+        max-width: 100%;
+        /* Ensure images don't exceed their container width */
+
+        /* Maintain aspect ratio */
+        margin-right: 10px;
+        /* Example margin for space between images */
+
+    }
 
 
 
 
 
-
-
-}
-
-.image-container {
-    display: flex;
-    /* Nested flex container for images */
-    justify-content: space-between;
-    /* Space between each image */
-    align-items: center;
-    /* Align items vertically in the center */
-}
-
-img {
-    height: 200px;
-    width: 250px;
-}
-
-.image-container img {
-    max-width: 100%;
-    /* Ensure images don't exceed their container width */
-
-    /* Maintain aspect ratio */
-    margin-right: 10px;
-    /* Example margin for space between images */
 
 }

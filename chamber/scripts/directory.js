@@ -66,8 +66,11 @@ fetch(url)
         });
     })
 // event listener for menu button
-menu.addEventListener("click", () => {
-    menu.classList.toggle("show");
-    nav.classList.toggle("show");
-    member.classList.toggle("em");
-})
+const navigation = document.getElementById("nav");
+const hamButton = document.getElementById('menu');
+
+hamButton.addEventListener('click', () => {
+    console.log("working")
+    navigation.classList.toggle('open');
+    hamButton.classList.toggle('open');
+});

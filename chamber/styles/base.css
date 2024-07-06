@@ -282,7 +282,8 @@ section {
 
 .list section {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     margin: 0;
     padding: 0.25rem;
 }
@@ -342,11 +343,7 @@ img {
     color: white;
 }
 
-.grid1 ol {
-    display: flex;
-    justify-content: left;
-    flex-direction: column;
-}
+
 
 .grid1 ol li {
     text-align: left;
@@ -357,6 +354,28 @@ img {
 }
 
 section .grid1 {
-    grid-row: auto;
     padding-bottom: 50px;
+}
+
+.grid1 {
+    grid-row: 1/2;
+}
+
+.grid3 {
+    grid-row: 2/2;
+}
+
+.grid5 {
+
+    margin-bottom: 123px;
+
+}
+
+.grid6 {
+    margin-bottom: 135px;
+}
+
+.discover {
+    display: flex;
+    flex-direction: column;
 }
