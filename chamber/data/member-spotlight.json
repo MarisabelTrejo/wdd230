@@ -1,0 +1,28 @@
+{
+    "buisness": [
+        {
+            "name": "YMCA",
+            "adresses": "45123 street, Garden City, Kansas",
+            "phone": "801-193-8362",
+            "website": "vasa.com",
+            "image": "YMCA.webp",
+            "membership": "Premium Member"
+        },
+        {
+            "name": "Target",
+            "adresses": "15823 street, Garden City, Kansas",
+            "phone": "801-933-8362",
+            "website": "Target.com",
+            "image": "target.webp",
+            "membership": "Premium Member"
+        },
+        {
+            "name": "CORE",
+            "adresses": "7123 street, Garden City, Kansas",
+            "phone": "801-997-8362",
+            "website": "core.com",
+            "image": "core.webp",
+            "membership": "Premium Member"
+        }
+    ]
+}

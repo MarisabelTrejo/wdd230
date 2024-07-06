@@ -5,8 +5,12 @@ const body = document.getElementById("body");
 const header = document.getElementById("header");
 const nav = document.getElementById("nav");
 const d = new Date();
+const display = document.getElementById("print");
+
 let presentYear = d.getFullYear();
 const section = document.getElementsByTagName("section");
+const companyUrl = "https://marisabeltrejo.github.io/wdd230/chamber/data/members.json"
+
 
 let LastModif = new Date(document.lastModified);
 
@@ -56,7 +60,7 @@ async function curentWeather() {
             let icon = data.weather[0].icon;
             let url = `https://openweathermap.org/img/w/${icon}.png`;
 
-            document.getElementById("icon").setAttribute("src", url);
+            // document.getElementById("icon").setAttribute("src", url);
 
 
 
@@ -86,3 +90,19 @@ exit.addEventListener("click", () => {
 })
 
 
+fetch(companyUrl)
+    .then(res => res.json())
+    .then(data => {
+        console.log(data)
+        data.buisness.forEach((repo) => {
+            console.log(2)
+            let section = `<div class="medium2 large2">
+                <h2 class="heading">${repo.name}</h2>
+                <div>
+                    <img class="bussimage" src="images/${repo.image}">
+                    <p>${repo.membership}</p>
+                </div>
+            </div>`
+            display.innerHTML += section;
+        });
+    })

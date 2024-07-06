@@ -253,9 +253,8 @@ section {
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .grid section {
