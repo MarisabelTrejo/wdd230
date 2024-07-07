@@ -17,6 +17,8 @@ h1 {
     font-family: "Figtree"
 }
 
+
+
 h2 {
     font-family: "Figtree";
     color: white;
@@ -24,6 +26,25 @@ h2 {
     border: 2px solid #000;
     padding: 20px;
 }
+
+.medium2 h2 {
+    color: #3A2618;
+    background-color: #EFE7DA;
+    border: 2px solid #3A2618;
+    width: 170px;
+    height: 110px;
+    align-content: center;
+
+
+
+}
+
+.medium2 .heading h2 {
+    margin-right: -100px;
+}
+
+
+
 
 .navigation {
     display: none;

@@ -74,6 +74,50 @@ async function curentWeather() {
         })
 }
 curentWeather()
+// Function to fetch 3-day forecast
+async function fetchWeatherForecast() {
+    const forecastUrl = "https://api.openweathermap.org/data/2.5/forecast?lat=37.9717&lon=-100.8727&appid=2182407fe8adf3fe7aed195903bf92aa";
+
+    try {
+        const response = await fetch(forecastUrl);
+        const data = await response.json();
+
+        // Extract relevant data for each day (typically forecasts for 3 days are in the list)
+        const forecasts = data.list;
+
+        // Display forecast for each day
+        for (let i = 0; i < 3; i++) {
+            const forecast = forecasts[i];
+
+            // Date
+            const date = new Date(forecast.dt * 1000);
+            const dayOfWeek = date.toLocaleDateString('en-US', { weekday: 'long' });
+
+            // Temperature (convert from Kelvin to Fahrenheit)
+            const tempKelvin = forecast.main.temp;
+            const tempFahrenheit = (tempKelvin - 273.15) * 1.8 + 32;
+
+            // Weather description and icon
+            const description = forecast.weather[0].description;
+            const icon = forecast.weather[0].icon;
+            const iconUrl = `https://openweathermap.org/img/w/${icon}.png`;
+
+            // Display forecast information for each day
+            const forecastElement = document.getElementById(`day${i + 1}`);
+            forecastElement.innerHTML = `
+                <h2>${dayOfWeek}</h2>
+                <img src="${iconUrl}" alt="${description}">
+                <p>Temperature: ${tempFahrenheit.toFixed(1)} °F</p>
+                <p>Forecast: ${description}</p>
+            `;
+        }
+    } catch (error) {
+        console.error('Error fetching weather forecast:', error);
+    }
+}
+
+// Call the function to fetch and display the 3-day forecast
+fetchWeatherForecast();
 
 const meet = document.getElementById("meet");
 const exit = document.getElementById("exit");
@@ -100,7 +144,8 @@ fetch(companyUrl)
                 <h2 class="heading">${repo.name}</h2>
                 <div>
                     <img class="bussimage" src="images/${repo.image}">
-                    <p>${repo.membership}</p>
+                    <p>***${repo.membership}***</p>
+                    <p>____________________________________________________________</p>
                 </div>
             </div>`
             display.innerHTML += section;
