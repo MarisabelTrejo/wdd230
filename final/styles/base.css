@@ -138,7 +138,7 @@ nav a:hover {
 }
 
 .hero {
-    margin: 10px auto;
+    margin-top: -10px auto;
     position: relative;
     border: 1px solid rgba(0, 0, 0, .1);
     height: 300px;
@@ -151,7 +151,7 @@ nav a:hover {
 }
 
 .herolabel {
-    margin-top: 230px;
+    margin-top: 190px;
     margin-left: 30px;
     position: absolute;
     top: 30px;
@@ -422,6 +422,8 @@ img:hover {
 
 
 }
+
+
 
 footer {
     border: 2px solid #313135;
