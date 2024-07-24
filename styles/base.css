@@ -46,9 +46,6 @@ nav {
     max-width: 100%;
 }
 
-nav a:hover {
-    border: 1px solid #F6CACA;
-}
 
 ol {
     text-align: left;

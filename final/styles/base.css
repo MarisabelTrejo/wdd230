@@ -1,0 +1,349 @@
+body,
+html {
+    margin: 0px;
+}
+
+body {
+    background-color: #f4e4ba;
+
+
+}
+
+.border {
+    border: 2px solid #0A014F;
+    margin: 1.8rem;
+    border-radius: 0.6em;
+}
+
+h1,
+h3,
+button,
+nav,
+p,
+#message {
+
+    font-family: "Acme", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+h2 {
+
+    font-family: "Playwrite CU", cursive;
+    font-style: normal;
+
+}
+
+
+
+.reviews h2 {
+    margin-left: 60px;
+
+}
+
+.temp h2 {
+    margin-left: 30px;
+
+}
+
+
+.reviews,
+.temp {
+    border: 2px solid #0A014F;
+    box-shadow: 0px 0px 5px 5px rgba(207, 201, 201, 0.5);
+    width: 250px;
+    height: 63px;
+    margin-left: 155px;
+
+}
+
+
+div {
+
+    justify-content: center;
+
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+nav a {
+    text-decoration: none;
+    text-align: center;
+    padding: 30px;
+
+}
+
+nav {
+    padding-top: 20px
+}
+
+.navigation {
+    float: right;
+    list-style: none;
+    background-color: #E5A9A9;
+    margin-top: -30px;
+
+}
+
+nav li {
+    margin: 15px;
+}
+
+nav a:hover {
+    border: 1px solid #F6CACA;
+    cursor: pointer;
+
+}
+
+.navigation a:hover {
+    color: #9df7e5;
+    font-weight: 700;
+}
+
+.hero {
+    margin: 10px auto;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, .1);
+    height: 300px;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.herolabel {
+    margin-top: 230px;
+    margin-left: 30px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background: radial-gradient(#9df7e5, #F4E4BA, #E5A9A9);
+    padding: 1.5rem;
+    box-shadow: 0 0 3rem #fff;
+    opacity: 0.75;
+    /* Buenas */
+}
+
+.herolabel h1 {
+    margin: 0;
+    padding: .25rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-family: "Playwrite CU", cursive;
+}
+
+.move {
+    animation-direction: alternate-reverse;
+
+
+}
+
+p,
+h3,
+#message {
+    text-align: center;
+
+}
+
+#message {
+    margin-top: 10px;
+}
+
+.move h3 {
+    padding: 20px;
+}
+
+#temperature-alert {
+    position: absolute;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+    /* Ensure message appears above other content */
+}
+
+#message {
+    font-weight: bold;
+}
+
+#close-btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+footer {
+    border-top: black;
+}
+
+.reference a {
+    text-align: center;
+}
+
+.buttonRent {
+    margin-top: 70px;
+    margin-left: 250px;
+
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-family: "Acme", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+td {
+    font-family: "Acme", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.rental {
+    text-align: center;
+    padding-top: 70px;
+}
+
+.weather-icon {
+    margin-left: 260px;
+}
+
+/* Reset default margin and padding */
+
+
+fieldset {
+    line-height: 1.8;
+}
+
+legend {
+    font-family: "Playwrite CU", cursive;
+
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+    /* Single column layout for small screens */
+}
+
+.rental-agreement,
+.reservation-form {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.rental-agreement h2,
+.reservation-form h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 90%;
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.rental-agreement input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(#9df7e5, #F4E4BA, #E5A9A9);
+    color: black;
+    border-radius: 6px;
+    padding: .8rem;
+
+    width: 50%;
+    max-width: 400px;
+    margin: -1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px #999;
+
+
+}
+
+label,
+input,
+#rental-type {
+
+    font-family: "Acme", sans-serif;
+}
+
+.submit-rental {
+    margin-top: 40px;
+    margin-left: 180px
+}
+
+.location,
+.contact {
+    border: 2px solid #0A014F;
+    box-shadow: 0px 0px 5px 5px rgba(207, 201, 201, 0.5);
+    margin-top: 30px;
+    width: 250px;
+    height: 63px;
+    margin-left: 155px;
+
+}
+
+.contact h2 {
+    margin-left: 60px;
+}
+
+.location h2 {
+
+    margin-top: 20px;
+    margin-left: 60px;
+}
+
+.body {
+
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Acme', sans-serif;
+    /* Adjust as per your font choice */
+}
+
+.main {
+
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+    /* Adjust spacing as needed */
+}
