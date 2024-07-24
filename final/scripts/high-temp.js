@@ -1,18 +1,18 @@
+// Get the close button and the alert container
+const closeButton = document.getElementById('close-btn');
+const alertContainer = document.getElementById('temperature-alert');
 
-const apiKey = '2182407fe8adf3fe7aed195903bf92aa';
-const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=20.6328&lon=-87.0914&units=metric&appid=${apiKey}`;
-const messageEl = document.getElementById('message');
-const closeBtn = document.getElementById('close-btn');
-
-fetch(apiUrl)
-    .then(response => response.json())
-    .then(data => {
-        const tempMax = Math.round(data.main.temp_max);
-        messageEl.textContent = `Today's high temperature: ${tempMax}°C`;
-    })
-    .catch(error => console.error(error));
-
-closeBtn.addEventListener('click', () => {
-    const alertEl = document.getElementById('temperature-alert');
-    alertEl.style.display = 'none';
+// Add event listener to close the alert when the close button is clicked
+closeButton.addEventListener('click', () => {
+    alertContainer.style.display = 'none'; // Hide the alert
 });
+
+// Function to show the alert
+function showAlert(message) {
+    const messageElement = document.getElementById('message');
+    messageElement.textContent = message;
+    alertContainer.style.display = 'block'; // Show the alert
+}
+
+// Example usage
+showAlert('Temperature is too high!');

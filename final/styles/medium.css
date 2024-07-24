@@ -1,0 +1,115 @@
+@media screen and (min-width: 640px) {
+
+    footer {
+        position: absolute;
+        bottom: -100;
+        width: 100%;
+        /* Footer styles (background, padding, etc.) */
+    }
+
+    .navigation {
+        display: block;
+        width: 100%;
+    }
+
+    .navigation ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navigation ul li {
+        flex: 1 1 100%;
+    }
+
+    .herolabel {
+        margin-left: 160px;
+    }
+
+    .buttonRent {
+        margin-left: 390px;
+    }
+
+    .reviews,
+    .temp,
+    .contact,
+    .location {
+        margin-left: 300px;
+
+    }
+
+    .car {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* Adjust the number of columns as needed */
+        grid-template-rows: 1fr;
+        /* First row takes up 1 fraction of available space */
+
+        gap: 10px;
+        /* Adjust the gap between images as needed */
+        align-items: center;
+        /* Align items vertically in the center */
+    }
+
+    .car>div {
+        text-align: center;
+        /* Center the content inside each grid cell */
+    }
+
+    .car img {
+
+        /* Ensure images do not exceed their container width */
+        height: auto;
+        /* Maintain aspect ratio */
+    }
+
+    .rental-agreement {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* Three equal columns */
+        grid-template-rows: auto;
+        /* Auto height for rows */
+        gap: 10px;
+        /* Adjust the gap between grid items as needed */
+    }
+
+    .personal,
+    .trip-info,
+    .rental-info {
+        grid-column: span 1;
+        /* Each fieldset spans one column */
+    }
+
+    .submit-rental {
+        grid-column: 2;
+        /* Place the submit button in the middle column */
+        /* Center align the content */
+
+        margin-left: -1px;
+    }
+
+    .submit-rental input[type="submit"] {
+        width: 100%;
+        /* Full width for the submit button */
+        max-width: 200px;
+        /* Optional: Set a max-width for better styling */
+    }
+
+    .reference {
+        margin-left: 300px;
+    }
+
+
+    .form-contact {
+        margin-left: 160px;
+    }
+
+    .weather-icon {
+        margin-left: 500px;
+    }
+
+    .submit-rental {
+        padding-left: 200px;
+    }
+
+
+}

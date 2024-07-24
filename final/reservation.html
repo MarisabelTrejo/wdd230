@@ -18,6 +18,8 @@
     <!-- Normalize -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+
     <link rel="stylesheet" href="styles/larger.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,6 +36,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="rentals.html">Rentals</a></li>
             <li><a href="reservation.html">Reservation</a></li>
+
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
@@ -43,7 +46,7 @@
     </div>
     <main>
         <form method="get" action="successful.html" class="rental-agreement">
-            <fieldset>
+            <fieldset class="personal">
 
                 <legend>Personal</legend>
                 <div class="form-group">
@@ -63,7 +66,7 @@
 
             </fieldset>
 
-            <fieldset>
+            <fieldset class="trip-info">
                 <legend>Trip Info</legend>
 
                 <div class="form-group">
@@ -76,7 +79,7 @@
                 </div>
 
             </fieldset>
-            <fieldset>
+            <fieldset class="rental-info">
                 <legend>Rental Info</legend>
                 <div class="form-group">
                     <label for="date">Date:</label>
@@ -113,6 +116,13 @@
         </form>
 
     </main>
+    <footer>
+        <a class="reference" href="https://www.flaticon.com/free-icons/scooter" title="scooter icons">Scooter icons
+            created by Freepik -
+            Flaticon</a>
+        <p> Marisabel Trejo| Contact Info: 620- 276- 4023 | Project for WDD230</p>
+
+    </footer>
 </body>
 
 </html>

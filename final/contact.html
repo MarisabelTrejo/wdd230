@@ -18,6 +18,8 @@
     <!-- Normalize -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+
     <link rel="stylesheet" href="styles/larger.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,17 +41,39 @@
     </nav>
 
     <main class="main">
-
+        <div class="contact">
+            <h2>Contact</h2>
+        </div>
         <div class="contact-us">
-            <div class="contact">
-                <h2>Contact</h2>
-            </div>
 
-            <p>
-                Call us:(123) 456-7891
-            </p>
+
+            <p> Call us:(123) 456-7891</p>
             <p> Email: scoots@conzumel.mex</p>
             <p> Instagram: @ScootsConzumel</p>
+
+
+            <form method="get" action="successful.html" class="form-contact">
+                <fieldset class="contact-info">
+                    <legend>Contact us</legend>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="fname" required>
+                    </div>
+                    <div class="form-group ">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your email address" required>
+                    </div>
+                    <div class="form-group comment">
+                        <label for="special-accommodations">Comments:</label>
+                        <textarea id="special-accommodations" name="special-accommodations" rows="4"></textarea>
+                    </div>
+                    <div class="submit-rental comments">
+
+                        <input type="submit" value="Get Connected">
+                    </div>
+                </fieldset>
+
+            </form>
         </div>
 
         <div class="map">
@@ -65,6 +89,7 @@
             </p>
         </div>
     </main>
+
 
 
 </body>

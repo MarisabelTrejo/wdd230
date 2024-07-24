@@ -34,3 +34,11 @@ fetch("https://api.openweathermap.org/data/2.5/weather?lat=20.6328&lon=-87.0914&
 
 
     })
+
+const hamButton = document.querySelector('#menu');
+const navigation = document.querySelector('.navigation');
+
+hamButton.addEventListener('click', () => {
+    navigation.classList.toggle('open');
+    hamButton.classList.toggle('open');
+});

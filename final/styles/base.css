@@ -1,12 +1,43 @@
-body,
-html {
-    margin: 0px;
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    flex: 1 0 auto;
+    /* This will make the main content area expand to push the footer down */
 }
 
 body {
     background-color: #f4e4ba;
 
 
+}
+
+/* small view navigation */
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+
+.open {
+    display: block;
 }
 
 .border {
@@ -83,7 +114,7 @@ nav {
 }
 
 .navigation {
-    float: right;
+    padding: 15px 0px 15px 0px;
     list-style: none;
     background-color: #E5A9A9;
     margin-top: -30px;
@@ -96,13 +127,14 @@ nav li {
 
 nav a:hover {
     border: 1px solid #F6CACA;
-    cursor: pointer;
+
 
 }
 
-.navigation a:hover {
-    color: #9df7e5;
+.navigation li:hover {
+
     font-weight: 700;
+    cursor: pointer;
 }
 
 .hero {
@@ -179,9 +211,6 @@ h3,
     cursor: pointer;
 }
 
-footer {
-    border-top: black;
-}
 
 .reference a {
     text-align: center;
@@ -190,6 +219,8 @@ footer {
 .buttonRent {
     margin-top: 70px;
     margin-left: 250px;
+    cursor: pointer;
+
 
 }
 
@@ -252,7 +283,6 @@ legend {
 .reservation-form {
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .rental-agreement h2,
@@ -295,6 +325,8 @@ legend {
     max-width: 400px;
     margin: -1rem 2% 2rem 2%;
     box-shadow: 1px 1px 4px #999;
+    cursor: pointer;
+
 
 
 }
@@ -346,4 +378,89 @@ input,
     align-items: center;
     padding-top: 70px;
     /* Adjust spacing as needed */
+}
+
+
+
+.contact-info {
+    width: 200px;
+    padding-right: 30px;
+}
+
+.form-contact {
+    padding-left: 150px;
+}
+
+.comments {
+    margin-left: -1px;
+    cursor: pointer;
+
+}
+
+img:hover {
+    border: solid 2px #9df7e5;
+    margin: -2px;
+    cursor: pointer;
+}
+
+.atv-img,
+.scooter-img,
+.wrangler-img {
+
+    border-radius: 30%;
+    margin-top: 30px;
+
+}
+
+.car {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+
+
+    align-items: center;
+    /* centers items vertically */
+
+
+}
+
+footer {
+    border: 2px solid #313135;
+    margin-bottom: 0;
+    /* Ensure there's no negative margin */
+    padding: 10px;
+    /* Add some padding if needed */
+    background-color: #E5A9A9;
+    /* Add a background color if needed */
+    text-align: center;
+    /* Center the text inside the footer */
+}
+
+.reference {
+    margin-left: 150px;
+}
+
+#temperature-alert {
+    position: absolute;
+    top: 20px;
+    /* Adjust top position as needed */
+    right: 20px;
+    /* Adjust right position as needed */
+    padding: 10px;
+    background-color: #ca7c77;
+    /* Red background color */
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+    /* Hidden by default */
+    z-index: 1000;
+    /* Ensure it's on top of other elements */
+}
+
+#close-btn {
+
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+
 }

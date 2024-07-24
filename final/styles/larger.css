@@ -1,0 +1,47 @@
+@media (min-width: 800px) {
+    footer {
+        position: absolute;
+        bottom: -100;
+        width: 100%;
+        /* Footer styles (background, padding, etc.) */
+    }
+
+
+
+    .herolabel {
+        padding-top: 20px;
+        margin-left: 530px;
+    }
+
+    .buttonRent {
+        margin-left: 700px;
+        width: 200px;
+
+    }
+
+    .reviews,
+    .temp,
+    .contact,
+    .location {
+        margin-left: 710px;
+
+    }
+
+    .weather-icon {
+        margin-left: 780px;
+    }
+
+    .reference {
+        margin-left: 650px;
+    }
+
+    .form-contact {
+        margin-left: 540px;
+    }
+
+    .map {
+        width: 100%;
+    }
+
+
+}
